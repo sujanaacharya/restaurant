@@ -27,7 +27,10 @@ def learning(request):
     }
     return render(request,'learn.html',data)
 
+# def gello(request,name):
+#     return render(request,"greet.html",{"name":name.capitalize()})
 
 
 
-
+def greet (request,name):
+    return HttpResponse(f"hello,{name.capitalize()}")

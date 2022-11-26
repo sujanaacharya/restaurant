@@ -24,5 +24,8 @@ urlpatterns = [
     # path('course/<int:courseid>',views.coursedetail)
     path('',views.homepage),
     path('abouts/',views.about),
-    path('learn/',views.learning)
+    path('learn/',views.learning),
+    path("name/<str:name>",views.greet),
+
+    
 ]
